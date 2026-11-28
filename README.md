@@ -116,6 +116,82 @@ python3 connectmls_agent.py tools     # list Cotlet.dev tools
 python3 connectmls_agent.py serve     # start the stdio MCP server (same as no argument)
 ```
 
+## What you can ask your AI to do in connectMLS
+
+These are real jobs connectMLS users asked about. Cotlet lets ChatGPT, Claude or any MCP client do them in your own signed-in connectMLS account.
+
+### Search and comps
+
+#### Can ChatGPT or Claude search connectMLS for 3 bed homes in Naperville under $500k with a basement and give me the best 10 with links?
+
+Yes. With Cotlet, ChatGPT or Claude runs the search in your own signed-in connectMLS account with your criteria, ranks the matches by price and days on market and lists the best 10 with links. Searching changes nothing in connectMLS.
+
+Ask your agent: "Search connectMLS for 3 bed homes in Naperville under $500k with a basement and list the best 10 with links."
+
+As an API endpoint: Yes. Do the search once with your agent in Cotlet and save it as an endpoint, then call it from n8n, Make, Zapier or a script with a different area or price each time.
+
+#### How do I pull sold comps within half a mile of an address in connectMLS and get a price range?
+
+Yes. connectMLS has comps and CMA screens for sold listings near an address. With Cotlet, your agent opens them in your signed-in account, pulls the sold comps for the radius and months you name and gives you the list with a price range. Nothing changes in connectMLS.
+
+Ask your agent: "Pull sold comps within half a mile of 410 Elm St from the last 6 months and give me a price range."
+
+As an API endpoint: Yes. Save the comps pull as an endpoint in Cotlet and call it from n8n, Make or a script with the address and period as inputs.
+
+### Daily market watch
+
+#### Can ChatGPT or Claude give me my connectMLS hotsheet every morning with new listings, price drops and back on market?
+
+Yes. With Cotlet, your agent opens the connectMLS Hotsheet for your areas, lists new listings, price changes and listings back on market with address and price, and can run it every morning as an automation that sends you the result.
+
+Ask your agent: "Give me today's connectMLS hotsheet for Naperville and Aurora: new listings, price drops and back on market, with address and price."
+
+As an API endpoint: Yes. Save the hotsheet as an endpoint in Cotlet and call it at 7 am from n8n, Make or Zapier to send the result to your inbox.
+
+#### Can AI list the listings in my zip codes that expired or were withdrawn in connectMLS in the last 30 days, with the listing agent?
+
+Yes. With Cotlet, your agent searches your signed-in connectMLS account for expired and withdrawn listings in your zip codes over the last 30 days and lists each one with address, price and listing agent, so you know who to call.
+
+Ask your agent: "List listings in my zip codes that expired or were withdrawn in the last 30 days, with address, price and the listing agent."
+
+As an API endpoint: Yes. Save the search as an endpoint in Cotlet and call it every Monday from n8n, Make or Zapier to copy the list to your CRM.
+
+### Agents and clients
+
+#### Can AI run reverse prospecting in connectMLS for my listing and draft an email to each agent whose client matches?
+
+Yes. connectMLS has reverse prospecting that shows agents whose clients match a listing. With Cotlet, your agent runs it for your listing and drafts a short email for each agent. Nothing is sent until you say yes.
+
+Ask your agent: "Run reverse prospecting for my listing at 12 Oak St and draft a short email to each agent whose client matches. Send nothing yet."
+
+As an API endpoint: Yes. Save the matching step as an endpoint in Cotlet that returns the agents as JSON, and use it from n8n or Make to build your own mailing.
+
+#### Which listings did my clients favorite or comment on in the connectMLS portal this week, and can AI tell me?
+
+Yes. With Cotlet, your agent opens the client portal in your signed-in connectMLS account and lists, per client, the listings they favorited or commented on this week. Nothing changes in connectMLS.
+
+Ask your agent: "Which listings did my clients favorite or comment on in the connectMLS portal this week? Group the answer by client."
+
+As an API endpoint: Yes. Save the portal check as an endpoint in Cotlet and call it every Friday from n8n, Make or Zapier to send you the week's client activity.
+
+### Your own listings
+
+#### Can AI change the price of my listing in connectMLS and show me the form before saving?
+
+Yes. With Cotlet, your agent opens your listing in your signed-in connectMLS account, enters the new price and shows you the filled form. Nothing changes until you say yes. MLS rules still apply to you.
+
+Ask your agent: "Change the price of my listing at 12 Oak St to $489,000 and show me the form before saving."
+
+As an API endpoint: Yes. Save the price change as an endpoint in Cotlet with the listing and the new price as inputs. It still waits for your OK before it saves.
+
+#### How do I export my active and pending connectMLS listings with list price, days on market and status to a sheet?
+
+Yes. connectMLS exports your own listings through a custom report under Reports. With Cotlet, your agent builds that report with list price, days on market and status for your active and pending listings and gives you the rows as a CSV or a Google Sheet.
+
+Ask your agent: "Export my active and pending connectMLS listings with list price, days on market and status into one CSV."
+
+As an API endpoint: Yes. Save the export as an endpoint in Cotlet and call it every morning from n8n, Make or Zapier to refresh a Google Sheet.
+
 ## Questions from connectMLS users
 
 **Does connectMLS have an API?**
